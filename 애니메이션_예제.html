@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션 예제</title>
+    <style>
+        .ani01 {
+            width: 100px;
+            height: 100px;
+            margin: 100px 0 0 50px;
+            background-color: lime;
+
+            animation-name: ani01;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes ani01 {
+            0% {
+                transform: translateX(0);
+            }
+            25% {
+                width: 200px;
+                transform: translateX(0);
+                background-color: palevioletred;
+            }
+            50% {
+                width: 100px;
+                transform: translate(100px);
+                background-color: tomato;
+            }
+            75% {
+                width: 200px;
+                transform: translateX(0);
+                background-color:darkcyan
+            }
+            100% {}
+        }
+
+        .ani02 {
+            width: 100px;
+            height: 100px;
+            margin: 100px 0 0 50px;
+            background-color: skyblue;
+
+            animation-name: ani02;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes ani02 {
+            0% {
+                transform: translateX(0);
+            }
+            13% {
+                width: 200px;
+                height: 100px;
+                transform: translate(0,0);
+                background-color: slateblue;
+            }
+            26% {
+                width: 100px;
+                height: 100px;
+                transform: translate(100px,0);
+                background-color: darkgoldenrod;
+            }
+            39% {
+                width: 100px;
+                height: 200px;
+                transform: translate(100px,0);
+                background-color: violet;
+            }
+            52% {
+                width: 100px;
+                height: 100px;
+                transform: translate(100px,100px);
+                background-color:deeppink
+            }
+            65% {
+                width: 200px;
+                height: 100px;
+                transform: translate(0,100px);
+                background-color: lightcoral;
+            }
+            78% {
+                width: 100px;
+                height: 100px;
+                transform: translate(0,100px);
+                background-color:cornsilk
+            }
+            91% {
+                width: 100px;
+                height: 200px;
+                transform: translate(0.100px);
+                background-color:
+            }
+            100% {}
+
+        }
+    </style>
+</head>
+<body>
+    <div class="ex">
+        <div class="ani01"></div>
+        <div class="ani02"></div>
+    </div>
+</body>
+</html>
